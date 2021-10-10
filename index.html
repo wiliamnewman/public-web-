@@ -1,27 +1,81 @@
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+<!DOCTYPE html>
+<html>
+<body>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+<h1>The textarea element</h1>
+
+<script>
+function ducfunc() {
+
+var testchuoi ="";
+var huhu = document.getElementById("tarea").value;
+
+huhu = huhu.replace(/ \| .*?tician/g,'');
+
+
+
+var accs = huhu.split(/\n/g);
+
+var dongacc= "";
+
+
+for (let i = 0; i < accs.length; i++) {
+
+var splitacc = accs[i].split(":");
+
+
+var pass = splitacc[1];
+var name = splitacc[0];
+
+
+var thaytheall = document.getElementById("mau_up").value;
+
+thaytheall = thaytheall.replace("hehe",pass);
+
+thaytheall = thaytheall.replace("hihi",name);
+
+
+dongacc = dongacc+ thaytheall;
+}
+
+
+document.getElementById("hienthi").innerHTML = dongacc;
+
+document.getElementById("test").innerHTML = testchuoi;
+}
+</script> 
+
+<form action="/action_page.php">
+<label for="w3review">Review of W3Schools:</label>
+<textarea id="tarea" name="w3review" rows="4" cols="50">alexnunez22@ymail.com:Saekobusujima7 | Plan = Premium Nord VPN | Expiry = 2023-06-01  | Cracked By = ExtremeTactician
+zhenyijr@gmail.com:Zhenyijr12! | Plan = Premium Nord VPN | Expiry = 2023-02-28  | Cracked By = ExtremeTactician
+mcwilson3121@gmail.com:Cheese3121! | Plan = Premium Nord VPN | Expiry = 2023-03-02  | Cracked By = ExtremeTactician
+mcwilson3121@gmail.com:Cheese3121! | Plan = Premium Nord VPN | Expiry = 2023-03-02  | Cracked By = ExtremeTactician
+thelittlestkuriboh@gmail.com:Kurib0h0! | Plan = Premium Nord VPN | Expiry = 2023-12-30  | Cracked By = ExtremeTactician
+lokey0104@gmail.com:Hyukhae123! | Plan = Premium Nord VPN | Expiry = 2023-03-28  | Cracked By = ExtremeTactician
+mastermele81@gmail.com:Iceyhot81! | Plan = Premium Nord VPN | Expiry = 2023-05-11  | Cracked By = ExtremeTactician
+tjtrosclair728@gmail.com:301170Tj! | Plan = Premium Nord VPN | Expiry = 2023-06-19  | Cracked By = ExtremeTactician
+mkerstens@home.nl:260143Sm! | Plan = Premium Nord VPN | Expiry = 2023-05-04  | Cracked By = ExtremeTactician
+vdernovich@gmail.com:Vance123! | Plan = Premium Nord VPN | Expiry = 2022-07-16  | Cracked By = ExtremeTactician
+mdague4@gmail.com:Admin001! | Plan = Premium Nord Proxy | Expiry = 2023-04-19  | Cracked By = ExtremeTactician
+  </textarea>
+
+<textarea id="mau_up" cols="50" rows="10">    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" value="hihi" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" value="hehe" required>
         
     <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+</textarea>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
+
+  <br><br>
+  <input type="button" value="Submit" onclick="ducfunc()">
 </form>
 
+<p id="hienthi">Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+<p id="test"></p>
 </body>
 </html>
-
