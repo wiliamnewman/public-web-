@@ -1,0 +1,13 @@
+##.ipprtcnt
+###poster
+||player.javdisk.com/preroll/$domain=player.javdisk.com
+91porn.com#@%#//scriptlet("set-constant", "player.preroll", "noopFunc")
+#%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
+||jads.co^
+##.ad_img
+||91p20.space/fans/
+/adserver.$~xmlhttprequest,domain=~konograma.com
+/cdn-cgi/bm/cv/*
+##iframe[width="300"][height="250"]
+||fonts.googleapis.com/css?
+||google-analytics.com/ga.js$script,redirect=google-analytics-ga,domain=~daj.jp
